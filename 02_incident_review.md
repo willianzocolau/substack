@@ -45,6 +45,10 @@ O staff não precisa ter estado presente no incidente para conduzir bem essa con
 
 Essas perguntas, feitas com consistência mês a mês, influenciam como o time pensa — sem precisar de aprovação em cada PR ou presença em cada refinamento.
 
+Outro ponto que reforça essa visão macro é conectar a cerimônia de incident review com a review de métricas do time. Ao analisar o fluxo de trabalho — upstream e downstream — é possível fazer o breakdown de onde o capacity está sendo alocado: em bugs, em acionáveis de incidentes ou em entrega de valor. Essa leitura combinada deixa visível algo que isoladamente não aparece: o quanto comportamentos inesperados estão consumindo o time e competindo com o que realmente move o negócio.
+
+Esse tipo de conexão entre cerimônias é parte do que Tanya Reilly chama de [glue work](https://www.noidea.dog/glue) — o trabalho essencial de manter times alinhados e funcionando bem, que raramente aparece em métricas de entrega mas que define muito do resultado coletivo. É mais um instrumento que o staff tem para influenciar priorização sem precisar estar no detalhe de cada decisão.
+
 ---
 
 ## O que não pode faltar em uma hora por mês
@@ -129,3 +133,13 @@ Comece pequeno, com o objetivo claro, e mantenha por tempo suficiente para ver o
 ---
 
 Se quiser ir além na definição dos limiares que determinam o que é um incidente no seu contexto, um passo importante é ter SLOs bem definidos para o seu domínio. Escrevi sobre como abordar isso na prática aqui: [Escalando Sidekiq no Kubernetes: uma abordagem orientada a SLOs](https://www.linkedin.com/pulse/escalando-sidekiq-kubernetes-uma-abordagem-orientada-slos-zocolau-cvx4c/)
+
+---
+
+## Referências
+
+- Beyer, B., Jones, C., Petoff, J., Murphy, N. R. (eds.). *Site Reliability Engineering: How Google Runs Production Systems*. O'Reilly Media, 2016. Capítulo 14 (Managing Incidents) e Capítulo 15 (Postmortem Culture). O capítulo 14 descreve incidente como um mecanismo de coordenação entre times — não de priorização técnica — e apresenta o Incident Command System (ICS) como estrutura para organizar essa coordenação. Disponível em: [sre.google/sre-book](https://sre.google/sre-book/table-of-contents/)
+
+- Forsgren, N., Humble, J., Kim, G. *Accelerate: The Science of Lean Software and DevOps*. IT Revolution Press, 2018. Times de alta performance são 2,5x mais propensos a usar falhas como oportunidade de aprendizado.
+
+- Reilly, T. *Being Glue*. 2019. Discussão sobre o trabalho essencial de manter times alinhados e funcionando bem, que raramente aparece em métricas de entrega. Disponível em: [noidea.dog/glue](https://www.noidea.dog/glue)
